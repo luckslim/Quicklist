@@ -17,39 +17,26 @@ function listAdd(list){
         
         const li = document.createElement("li");
         li.classList.add("class-list");
-
-        
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.id = `checkbox-${list.id}`;
-
-      
         const p = document.createElement("p");
         p.textContent = list.item;
-
-       
         const trashIcon = document.createElement("img");
         trashIcon.src = "img/trash.svg";
         trashIcon.alt = "Delete";
         trashIcon.style.cursor = "pointer";
-
-    
         trashIcon.onclick = () => {
             ul.removeChild(li);
             del()
         };
-
-        
         li.appendChild(checkbox);
         li.appendChild(p);
         li.appendChild(trashIcon);
-
-       
         ul.appendChild(li);
     }catch(error){
         console.log(error)
     }
-
 }
 function formClear(){
     item.value=""
