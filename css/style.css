@@ -41,7 +41,7 @@
     background-color: var(--green-notify);
     color: var(--always-white);
     width:600px;
-    padding: 12px;
+    padding: 20px;
     border-radius:8px;
   }
 body{
